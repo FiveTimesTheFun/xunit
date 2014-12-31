@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Security;
 using Xunit.Abstractions;
 using Xunit.Serialization;
-#if !ASPNETCORE50
+#if !ASPNETCORE50 && !NETCORE
 using System.Runtime.Serialization;
 #endif
 

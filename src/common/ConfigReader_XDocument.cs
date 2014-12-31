@@ -26,7 +26,7 @@ namespace Xunit
                 configFileName = assemblyFileName + ".config";
 
             var result = new TestAssemblyConfiguration();
-
+#if !NETCORE
             try
             {
                 using (var stream = File.OpenRead(configFileName))
@@ -61,7 +61,7 @@ namespace Xunit
                 }
             }
             catch { }
-
+#endif
             return result;
         }
 

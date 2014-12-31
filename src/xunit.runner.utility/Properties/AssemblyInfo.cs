@@ -15,6 +15,8 @@ using System.Reflection;
 [assembly: AssemblyTitle("xUnit.net Runner Utility (ASP.NET)")]
 #elif ASPNETCORE50
 [assembly: AssemblyTitle("xUnit.net Runner Utility (ASP.NET Core)")]
+#elif NETCORE
+[assembly: AssemblyTitle("xUnit.net Runner Utility (.NET Core)")]
 #elif NO_APPDOMAIN
 [assembly: AssemblyTitle("xUnit.net Runner Utility (.NET 4.5 [No AppDomain])")]
 #else

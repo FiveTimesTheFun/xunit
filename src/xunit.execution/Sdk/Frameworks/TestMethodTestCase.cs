@@ -6,13 +6,13 @@ using System.Security;
 using System.Text;
 using Xunit.Abstractions;
 using Xunit.Serialization;
-#if !ASPNETCORE50
+#if !ASPNETCORE50 && !NETCORE
 using System.Runtime.Serialization;
 #endif
 
-#if !WINDOWS_PHONE_APP
+#if !WINDOWS_PHONE_APP && !NETCORE
 using System.Security.Cryptography;
-#else
+#elif !NETCORE
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Security.Cryptography;
 using Windows.Security.Cryptography.Core;
@@ -37,7 +37,7 @@ namespace Xunit.Sdk
 
 #if WINDOWS_PHONE_APP
         readonly static HashAlgorithmProvider Hasher = HashAlgorithmProvider.OpenAlgorithm(HashAlgorithmNames.Sha1);
-#elif !ASPNETCORE50
+#elif !ASPNETCORE50 && !NETCORE
         readonly static HashAlgorithm Hasher = new SHA1Managed();
 #endif
 
@@ -206,6 +206,10 @@ namespace Xunit.Sdk
 
                 stream.Position = 0;
 
+#if NETCORE
+                return stream.ToString();
+#else
+
 #if WINDOWS_PHONE_APP
                 var buffer = CryptographicBuffer.CreateFromByteArray(stream.ToArray());
                 var hash = Hasher.HashData(buffer).ToArray();
@@ -220,6 +224,7 @@ namespace Xunit.Sdk
 #endif
 
                 return String.Join("", hash.Select(x => x.ToString("x2")).ToArray());
+#endif
             }
         }
 

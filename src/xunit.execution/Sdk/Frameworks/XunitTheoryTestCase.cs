@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit.Abstractions;
-#if !ASPNETCORE50
+#if !ASPNETCORE50 && !NETCORE
 using System.Runtime.Serialization;
 #endif
 
