@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Xunit</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>xunit.runner.utility</AssemblyName>
+    <AssemblyName>xunit.runner.utility.MonoTouch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <ConsolePause>false</ConsolePause>
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <DocumentationFile>bin\iPhone\Debug\xunit.runner.utility.xml</DocumentationFile>
+    <DocumentationFile>bin\iPhone\Debug\xunit.runner.utility.MonoTouch.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,7 +34,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <DefineConstants>__IOS__;__MOBILE__;__IOS__;__MOBILE__;XAMARIN;NO_APPDOMAIN</DefineConstants>
-    <DocumentationFile>bin\iPhone\Release\xunit.runner.utility.xml</DocumentationFile>
+    <DocumentationFile>bin\iPhone\Release\xunit.runner.utility.MonoTouch.xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
@@ -58,6 +58,9 @@
     </Compile>
     <Compile Include="..\common\ExceptionUtility.cs">
       <Link>Common\ExceptionUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\common\ExecutionHelper.cs">
+      <Link>Common\ExecutionHelper.cs</Link>
     </Compile>
     <Compile Include="..\common\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>

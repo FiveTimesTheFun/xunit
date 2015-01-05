@@ -7,8 +7,8 @@
     <ProjectGuid>{D79B0E97-8599-4A59-A5AF-948BA91ACE21}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>xunit.execution</RootNamespace>
-    <AssemblyName>xunit.execution</AssemblyName>
+    <RootNamespace>Xunit</RootNamespace>
+    <AssemblyName>xunit.execution.desktop</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,7 +20,7 @@
     <DefineConstants>TRACE;DEBUG;XUNIT_CORE_DLL;NET45;NO_SERIALIZATION;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\xunit.execution.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\xunit.execution.desktop.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,7 +29,7 @@
     <DefineConstants>TRACE;XUNIT_CORE_DLL;NET45;NO_SERIALIZATION;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\xunit.execution.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\xunit.execution.desktop.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -49,6 +49,9 @@
   <ItemGroup>
     <Compile Include="..\common\ExceptionUtility.cs">
       <Link>Common\ExceptionUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\common\ExecutionHelper.cs">
+      <Link>Common\ExecutionHelper.cs</Link>
     </Compile>
     <Compile Include="..\common\LongLivedMarshalByRefObject_Execution.cs">
       <Link>Common\LongLivedMarshalByRefObject_Execution.cs</Link>

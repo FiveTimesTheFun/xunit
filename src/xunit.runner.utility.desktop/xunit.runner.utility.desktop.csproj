@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Xunit</RootNamespace>
-    <AssemblyName>xunit.runner.utility</AssemblyName>
+    <AssemblyName>xunit.runner.utility.desktop</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\Signing.snk</AssemblyOriginatorKeyFile>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -25,14 +25,14 @@
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;NET</DefineConstants>
-    <DocumentationFile>bin\Debug\xunit.runner.utility.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\xunit.runner.utility.desktop.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE;NET</DefineConstants>
-    <DocumentationFile>bin\Release\xunit.runner.utility.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\xunit.runner.utility.desktop.xml</DocumentationFile>
     <NoWarn>1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -69,6 +69,9 @@
     </Compile>
     <Compile Include="..\common\ExceptionUtility.cs">
       <Link>Common\ExceptionUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\common\ExecutionHelper.cs">
+      <Link>Common\ExecutionHelper.cs</Link>
     </Compile>
     <Compile Include="..\common\Guard.cs">
       <Link>Common\Guard.cs</Link>

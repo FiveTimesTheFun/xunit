@@ -30,6 +30,7 @@
         "..\\common\\DisposableExtensions.cs",
         "..\\common\\ExceptionExtensions.cs",
         "..\\common\\ExceptionUtility.cs",
+        "..\\common\\ExecutionHelper.cs",
         "..\\common\\GlobalAssemblyInfo.cs",
         "..\\common\\Guard.cs",
         "..\\common\\LongLivedMarshalByRefObject_Runner_NoAppDomain.cs",
@@ -40,8 +41,8 @@
         "..\\common\\TestMessageVisitor.cs",
         "..\\common\\TestMethodDisplay.cs",
         "..\\common\\TestOptionsNames.cs",
-        "..\\xunit.execution.wpa81\\Serialization\\Serializable.cs",
-        "**\\*.cs",
+        "..\\xunit.execution.universal\\Serialization\\Serializable.cs",
+        "..\\xunit.runner.utility\\**\\*.cs",
         "..\\messages\\**\\*.cs"
     ],
     "dependencies": {

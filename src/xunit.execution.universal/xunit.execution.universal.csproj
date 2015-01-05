@@ -9,8 +9,8 @@
     <ProjectGuid>{87DA8400-E929-4A02-A0CC-A8DD5404E3ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>xUnit.Execution</RootNamespace>
-    <AssemblyName>xunit.execution</AssemblyName>
+    <RootNamespace>Xunit</RootNamespace>
+    <AssemblyName>xunit.execution.universal</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -26,7 +26,7 @@
     <DefineConstants>TRACE;DEBUG;NETFX_CORE;WINDOWS_PHONE_APP;XUNIT_CORE_DLL;NET45;NO_APPDOMAIN;NEW_REFLECTION;NO_SERIALIZATION</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\xunit.execution.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\xunit.execution.universal.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP;XUNIT_CORE_DLL;NET45;NO_APPDOMAIN;NEW_REFLECTION;NO_SERIALIZATION</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\xunit.execution.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\xunit.execution.universal.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -101,6 +101,9 @@
     </Compile>
     <Compile Include="..\common\ExceptionUtility.cs">
       <Link>Common\ExceptionUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\common\ExecutionHelper.cs">
+      <Link>Common\ExecutionHelper.cs</Link>
     </Compile>
     <Compile Include="..\common\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>

@@ -17,8 +17,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="xunit.runner.utility.net45.noappdomain\bin\Release\xunit.runner.utility.dll" target="lib\xunit.runner.utility.dll" />
-    <file src="xunit.runner.utility.net45.noappdomain\bin\Release\xunit.runner.utility.pdb" target="lib\xunit.runner.utility.pdb" />
-    <file src="xunit.runner.utility.net45.noappdomain\bin\Release\xunit.runner.utility.xml" target="lib\xunit.runner.utility.xml" />
+    <file src="xunit.runner.utility.win8\bin\Release\xunit.runner.utility.win8.dll" target="lib\" />
+    <file src="xunit.runner.utility.win8\bin\Release\xunit.runner.utility.win8.pdb" target="lib\" />
+    <file src="xunit.runner.utility.win8\bin\Release\xunit.runner.utility.win8.xml" target="lib\" />
   </files>
 </package>

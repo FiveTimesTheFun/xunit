@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Xunit</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>xunit.execution</AssemblyName>
+    <AssemblyName>xunit.execution.iOS-Universal</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,7 +33,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;XUNIT_CORE_DLL;XAMARIN;NO_APPDOMAIN</DefineConstants>
-    <DocumentationFile>bin\iPhone\Release\xunit.execution.xml</DocumentationFile>
+    <DocumentationFile>bin\iPhone\Release\xunit.execution.iOS-Universal.xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
@@ -64,6 +64,9 @@
     </Compile>
     <Compile Include="..\common\ExceptionUtility.cs">
       <Link>Common\ExceptionUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\common\ExecutionHelper.cs">
+      <Link>Common\ExecutionHelper.cs</Link>
     </Compile>
     <Compile Include="..\common\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>

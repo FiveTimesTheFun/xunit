@@ -22,11 +22,11 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="xunit.execution.net45\bin\Release\xunit.execution.dll" target="lib\net45\xunit.execution.dll" />
-    <file src="xunit.execution.net45\bin\Release\xunit.execution.pdb" target="lib\net45\xunit.execution.pdb" />
-    <file src="xunit.execution.net45\bin\Release\xunit.execution.xml" target="lib\net45\xunit.execution.xml" />
+    <file src="xunit.execution.desktop\bin\Release\xunit.execution.desktop.dll" target="lib\net45\" />
+    <file src="xunit.execution.desktop\bin\Release\xunit.execution.desktop.pdb" target="lib\net45\" />
+    <file src="xunit.execution.desktop\bin\Release\xunit.execution.desktop.xml" target="lib\net45\" />
 
-    <file src="xunit.execution.iOS\bin\iPhone\Release\xunit.execution.dll" target="lib\monotouch\xunit.execution.dll" />
+    <!--<file src="xunit.execution.iOS\bin\iPhone\Release\xunit.execution.dll" target="lib\monotouch\xunit.execution.dll" />
     <file src="xunit.execution.iOS\bin\iPhone\Release\xunit.execution.pdb" target="lib\monotouch\xunit.execution.pdb" />
     <file src="xunit.execution.iOS\bin\iPhone\Release\xunit.execution.xml" target="lib\monotouch\xunit.execution.xml" />
 
@@ -53,6 +53,6 @@
 
     <file src="xunit.execution\bin\Release\aspnetcore50\xunit.execution.dll" target="lib\aspnetcore50\xunit.execution.dll" />
     <file src="xunit.execution\bin\Release\aspnetcore50\xunit.execution.pdb" target="lib\aspnetcore50\xunit.execution.pdb" />
-    <file src="xunit.execution\bin\Release\aspnetcore50\xunit.execution.xml" target="lib\aspnetcore50\xunit.execution.xml" />
+    <file src="xunit.execution\bin\Release\aspnetcore50\xunit.execution.xml" target="lib\aspnetcore50\xunit.execution.xml" />-->
   </files>
 </package>
