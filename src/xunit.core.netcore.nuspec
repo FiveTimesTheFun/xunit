@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>xunit.core.netcore</id>
+    <version>99.99.99</version>
+    <title>xUnit.net [Core Library for .NET Core]</title>
+    <authors>James Newkirk, Brad Wilson (.NET Core port by Matt Cohn)</authors>
+    <description>
+      Includes the core unit testing framework from xUnit.net (xunit.core.dll).
+      Supported platforms: .NET Core
+    </description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/xunit/xunit</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/xunit/media/master/logo-512-transparent.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/xunit/xunit/master/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <references>
+      <reference file="xunit.core.dll" />
+    </references>
+    <dependencies>
+      <dependency id="xunit.abstractions" version="[99.99.99]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- .NET Core -->
+    <file src="xunit.runner.utility.netcore\bin\Release\xunit.core.dll" target="lib\portable-net45+aspnetcore50+win+wpa81+wp80\xunit.core.dll" />
+    <file src="xunit.runner.utility.netcore\bin\Release\xunit.core.pdb" target="lib\portable-net45+aspnetcore50+win+wpa81+wp80\xunit.core.pdb" />
+    <file src="xunit.runner.utility.netcore\bin\Release\xunit.core.xml" target="lib\portable-net45+aspnetcore50+win+wpa81+wp80\xunit.core.xml" />
+    <file src="xunit.runner.utility.netcore\bin\Release\xunit.runner.utility.dll" target="lib\portable-net45+aspnetcore50+win+wpa81+wp80\xunit.runner.utility.dll" />
+    <file src="xunit.runner.utility.netcore\bin\Release\xunit.runner.utility.pdb" target="lib\portable-net45+aspnetcore50+win+wpa81+wp80\xunit.runner.utility.pdb" />
+    <file src="xunit.runner.utility.netcore\bin\Release\xunit.runner.utility.xml" target="lib\portable-net45+aspnetcore50+win+wpa81+wp80\xunit.runner.utility.xml" />
+  </files>
+</package>

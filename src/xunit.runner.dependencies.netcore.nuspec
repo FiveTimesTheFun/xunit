@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>xunit.runner.dependencies.netcore</id>
+    <version>2.0.0-beta5-build2785</version>
+    <title>xUnit.net Runner Utilities for .NET Core</title>
+    <authors>James Newkirk, Brad Wilson (.NET Core port by Matt Cohn)</authors>
+    <description>
+      Dependencies for the xUnit.net .NET Core runner.
+    </description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/xunit/xunit</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/xunit/media/master/logo-512-transparent.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/xunit/xunit/master/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <!-- Core -->
+    <file src="xunit.abstractions.pcl\bin\Release\xunit.abstractions.dll"         target="lib\portable-wpa80+win8+net45+aspnetcore50\xunit.abstractions.dll" />
+    <file src="xunit.runner.utility.netcore\bin\Release\xunit.runner.utility.dll" target="lib\portable-wpa80+win8+net45+aspnetcore50\xunit.runner.utility.dll" />
+    <file src="xunit.execution.netcore\bin\Release\xunit.execution.dll"           target="lib\portable-wpa80+win8+net45+aspnetcore50\xunit.execution.dll" />
+  </files>
+</package>
