@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Xunit.Sdk
@@ -9,18 +10,20 @@ namespace Xunit.Sdk
 
         public XunitWorkerThread(Action threadProc)
         {
-            task = new Task(() => threadProc());
-            task.Start();
+            task = Task.Factory.StartNew(threadProc, 
+                CancellationToken.None,
+                TaskCreationOptions.LongRunning | TaskCreationOptions.DenyChildAttach, 
+                TaskScheduler.Default);
         }
 
         public void Join()
         {
-            task.Wait();
+            task.GetAwaiter().GetResult();
         }
 
         public static void QueueUserWorkItem(Action backgroundTask)
         {
-            Task.Run(() => backgroundTask());
+            Task.Run(backgroundTask);
         }
     }
 }
